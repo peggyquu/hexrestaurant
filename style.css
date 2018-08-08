@@ -97,6 +97,8 @@ video {
 
 
 
+
+
 /* HTML5 display-role reset for older browsers */
 
 article,
@@ -150,6 +152,8 @@ table {
 
 
 
+
+
 /* <=========== pure.css ===========> */
 
 .pure-form input[type="text"],
@@ -187,6 +191,8 @@ table {
 
 
 
+
+
 /*
 Need to separate out the :not() selector from the rest of the CSS 2.1 selectors
 since IE8 won't execute CSS that contains a CSS3 selector.
@@ -200,6 +206,8 @@ since IE8 won't execute CSS that contains a CSS3 selector.
     border-radius: 4px;
     box-sizing: border-box;
 }
+
+
 
 
 
@@ -241,6 +249,8 @@ since IE8 won't execute CSS that contains a CSS3 selector.
     outline: 0;
     border-color: #129FEA;
 }
+
+
 
 
 
@@ -295,6 +305,8 @@ since IE8 won't execute CSS that contains a CSS3 selector.
     background-color: #eaeded;
     color: #cad2d3;
 }
+
+
 
 
 
@@ -402,6 +414,8 @@ since IE8 won't execute CSS that contains a CSS3 selector.
 
 
 
+
+
 /*
 Need to separate out the :not() selector from the rest of the CSS 2.1 selectors
 since IE8 won't execute CSS that contains a CSS3 selector.
@@ -425,6 +439,8 @@ since IE8 won't execute CSS that contains a CSS3 selector.
 
 
 
+
+
 /* NOTE: pure-help-inline is deprecated. Use .pure-form-message-inline instead. */
 
 .pure-form-aligned .pure-help-inline,
@@ -438,6 +454,8 @@ since IE8 won't execute CSS that contains a CSS3 selector.
 .pure-form-aligned textarea {
     vertical-align: top;
 }
+
+
 
 
 
@@ -477,6 +495,8 @@ since IE8 won't execute CSS that contains a CSS3 selector.
 
 
 
+
+
 /* Rounded Inputs */
 
 .pure-form input.pure-input-rounded,
@@ -484,6 +504,8 @@ since IE8 won't execute CSS that contains a CSS3 selector.
     border-radius: 2em;
     padding: 0.5em 1em;
 }
+
+
 
 
 
@@ -575,6 +597,8 @@ since IE8 won't execute CSS that contains a CSS3 selector.
 
 
 
+
+
 /* Inline help for forms */
 
 
@@ -588,6 +612,8 @@ since IE8 won't execute CSS that contains a CSS3 selector.
     vertical-align: middle;
     font-size: 0.875em;
 }
+
+
 
 
 
@@ -682,6 +708,8 @@ since IE8 won't execute CSS that contains a CSS3 selector.
 
 
 
+
+
 /* <=========== allcss ===========> */
 
 body {
@@ -692,6 +720,8 @@ body {
     max-width: 940px;
     margin: 0 auto;
 }
+
+
 
 
 
@@ -739,6 +769,10 @@ body {
     text-decoration: none;
 }
 
+.menu a:hover {
+    color: #3d1101;
+}
+
 .showmenu {
     display: none;
 }
@@ -748,6 +782,8 @@ li.line {
     border-bottom: 1px solid #fff;
     padding-bottom: 5px;
 }
+
+
 
 
 
@@ -794,17 +830,19 @@ li.line {
 
 
 
+
+
 /* <=========== content ===========> */
 
 .feature {
-    margin: 30px 0;
+    background-color: #EFE9E7;
 }
 
 .feature .title {
     text-align: center;
     line-height: 1.5rem;
     color: #3D1101;
-    background-color: #fff;
+    background-color: #EFE9E7;
     padding: 0 16px;
     width: 230px;
     margin: 0 auto;
@@ -833,17 +871,14 @@ li.line {
     left: -50px;
 }
 
-.feature {
-    margin: 50px 0;
-}
-
 .feature img {
     border-radius: 50%;
 }
 
 .feature ul {
     float: left;
-    margin-bottom: 50px;
+    padding-bottom: 50px;
+    background-color: #EFE9E7;
 }
 
 .feature li {
@@ -854,7 +889,7 @@ li.line {
 }
 
 .feature h3 {
-    margin: 30px 0;
+    padding: 30px 0;
     color: #3D1101;
 }
 
@@ -892,15 +927,17 @@ li.line {
 }
 
 .feedback {
-    margin: 50px 0;
+    background-color: #EFE9E7;
+    padding-top: 50px;
     clear: both;
+    min-height: 274px;
 }
 
 .feedback h3 {
     color: #3D1101;
     font-size: 24px;
     text-align: center;
-    margin-bottom: 30px;
+    padding-bottom: 30px;
 }
 
 .feedback img {
@@ -909,7 +946,7 @@ li.line {
 
 .feedback li {
     width: 31%;
-    margin: 0 1%;
+    padding: 0 1%;
     float: left;
 }
 
@@ -1015,6 +1052,8 @@ button.btn-submit {
 
 
 
+
+
 /* <=========== footer ===========> */
 
 .footer {
@@ -1097,7 +1136,12 @@ button.btn-submit {
 
 
 
+
+
 /* <=========== shop ===========> */
+.shop-content {
+    background-color: #EFE9E7;
+}
 
 .category {
     float: left;
@@ -1192,6 +1236,12 @@ li.card {
     color: #3D1101;
     position: relative;
     overflow: hidden;
+    background-color: #fff;
+    transition: 0.5s;
+}
+
+li.card:hover {
+    transform: translate(-5px,-5px);
 }
 
 .card .pic {
@@ -1269,11 +1319,17 @@ li.card {
 
 
 
+
+
 /* <=========== login ===========> */
+
+.login-content {
+    background-color: #EFE9E7;
+}
 
 .login-title {
     text-align: center;
-    margin-top: 50px;
+    padding-top: 50px;
 }
 
 .login-title img {
@@ -1284,7 +1340,7 @@ li.card {
     float: none;
     margin: 0 auto;
     max-width: 300px;
-    box-shadow: 3px 3px 4px rgba(0, 0, 0, 16%);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 16%);
     border-top: 3px solid #FF5E45;
     padding: 15px;
     box-sizing: border-box;
@@ -1320,6 +1376,10 @@ li.card {
     width: 125px;
     height: 30px;
     margin-left: 14px;
+}
+
+.button {
+    margin-top: 15px;
 }
 
 
@@ -1368,7 +1428,6 @@ li.card {
         background-color: #3d1101;
         padding: 50px;
         box-sizing: border-box;
-        margin-bottom: 50px;
     }
 
     .feature li {
@@ -1455,10 +1514,19 @@ li.card {
     }
 
     li.card {
-    width: 100%;
-}
+        width: 100%;
+    }
 
-.card img {
-    width: 100%;
-}
+    .card img {
+        width: 100%;
+    }
+
+    .banner .banner-text {
+        padding: 30px 20px;
+        height: auto;
+    }
+
+    .banner-text h2 {
+        line-height: 3rem;
+    }
 }
