@@ -836,6 +836,7 @@ li.line {
 
 .feature {
     background-color: #EFE9E7;
+    min-height: 532px;
 }
 
 .feature .title {
@@ -878,7 +879,6 @@ li.line {
 .feature ul {
     float: left;
     padding-bottom: 50px;
-    background-color: #EFE9E7;
 }
 
 .feature li {
