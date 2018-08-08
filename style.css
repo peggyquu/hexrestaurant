@@ -1163,9 +1163,10 @@ button.btn-submit {
 .category li {
     border-bottom: 1px solid;
     padding: 8px;
+    cursor: pointer;
 }
 
-.category li.active {
+.category li:hover {
     background-color: #3D1101;
     color: #fff;
 }
