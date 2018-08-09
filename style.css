@@ -836,7 +836,7 @@ li.line {
 
 .feature {
     background-color: #EFE9E7;
-    min-height: 532px;
+    min-height: 548px;
 }
 
 .feature .title {
@@ -1431,9 +1431,14 @@ li.card:hover {
         box-sizing: border-box;
     }
 
+    .feature ul {
+        float: none;
+    }
+
     .feature li {
         max-width: 100%;
         padding: 0 50px 50px;
+        float: none;
     }
 
     .feedback li {
